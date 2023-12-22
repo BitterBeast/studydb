@@ -1,5 +1,5 @@
 from motor.motor_asyncio import AsynIOMotor
-from config import config
+from config import *
 
 
 class Database:
@@ -10,4 +10,4 @@ class Database:
 
 
 
-db = Database(config.DB_URL, config.DB_NAME)
+db = Database(DB_URL, DB_NAME)
