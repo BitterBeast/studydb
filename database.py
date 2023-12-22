@@ -3,7 +3,7 @@ from config import config
 
 
 class Database:
-    def _init_(self, uri, database):
+    def _init_(self, uri, database_name):
       self._client = AsyncIOMotor(uri)
       self.db = self._client[database_name]
       self.col = self.db.user
